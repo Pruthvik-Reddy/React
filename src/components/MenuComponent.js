@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Media } from 'reactstrap';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
+import Header from "./HeaderComponent";
+import Footer from "./FooterComponent";
 
 
 class Menu extends Component {
@@ -51,6 +53,8 @@ class Menu extends Component {
 
     
         return (
+            <React.Fragment>
+            <Header />
             <div className="container">
                 <div className="row">
                     {menu}
@@ -61,6 +65,8 @@ class Menu extends Component {
                   </div>
                 </div>
             </div>
+            <Footer />
+            </React.Fragment>
         );
     }
 }
